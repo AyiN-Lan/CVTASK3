@@ -11,6 +11,10 @@ Experiments:
    Test: splitD
    Best checkpoint: weights/act_ABC_best.pt
 
+The model weights are provided in the cloud storage link:
+- act_B_best.pt: best checkpoint of ACT-B
+- act_ABC_best.pt: best checkpoint of ACT-ABC
+
 Shared hyperparameters:
 - Policy: LeRobot ACT
 - chunk_size: 16
