@@ -1,5 +1,6 @@
 Task2: LeRobot ACT cross-environment generalization
-
+Environment:
+See ./eval/requirements_freeze.txt or use ./environment_full.yml
 Experiments:
 1. ACT-B
    Train: splitB
