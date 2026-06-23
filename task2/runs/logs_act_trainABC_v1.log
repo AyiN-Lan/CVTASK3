@@ -1,0 +1,677 @@
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+/root/autodl-tmp/cv_final_task2/train_act_v30.py:386: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(args.amp and args.device.startswith("cuda")))
+[TRAIN SPLITS] ['splitA', 'splitB', 'splitC']
+[EVAL SPLITS] ['splitD']
+[LOAD ACTION META] /root/autodl-tmp/cv_final_task2/data/calvin-lerobot/splitA
+[DATASET READY] frames=366693 chunk_size=16
+[SPLIT] splitA: frames=366693
+[LOAD ACTION META] /root/autodl-tmp/cv_final_task2/data/calvin-lerobot/splitB
+[DATASET READY] frames=367096 chunk_size=16
+[SPLIT] splitB: frames=367096
+[LOAD ACTION META] /root/autodl-tmp/cv_final_task2/data/calvin-lerobot/splitC
+[DATASET READY] frames=337954 chunk_size=16
+[SPLIT] splitC: frames=337954
+[LOAD ACTION META] /root/autodl-tmp/cv_final_task2/data/calvin-lerobot/splitD
+[DATASET READY] frames=308918 chunk_size=16
+[SPLIT] splitD: frames=308918
+[TRAIN FRAMES] 1071743
+[EVAL FRAMES] 308918
+/root/autodl-tmp/cv_final_task2/train_act_v30.py:409: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=(args.amp and args.device.startswith("cuda"))):
+[TRAIN] step=000001 loss=100.538795 l1=0.408499 kld=10.013029 grad_norm=1363.566 steps/s=0.779
+[TRAIN] step=000050 loss=4.184091 l1=0.293416 kld=0.389067 grad_norm=59.407 steps/s=10.755
+[TRAIN] step=000100 loss=2.937723 l1=0.233699 kld=0.270402 grad_norm=53.794 steps/s=12.313
+[TRAIN] step=000150 loss=2.531386 l1=0.231012 kld=0.230037 grad_norm=53.914 steps/s=12.949
+[TRAIN] step=000200 loss=2.312779 l1=0.188537 kld=0.212424 grad_norm=38.449 steps/s=13.293
+[TRAIN] step=000250 loss=2.254657 l1=0.201940 kld=0.205272 grad_norm=53.484 steps/s=13.437
+[TRAIN] step=000300 loss=1.980306 l1=0.186576 kld=0.179373 grad_norm=35.794 steps/s=13.586
+[TRAIN] step=000350 loss=1.931325 l1=0.195357 kld=0.173597 grad_norm=45.138 steps/s=13.692
+[TRAIN] step=000400 loss=1.669913 l1=0.183000 kld=0.148691 grad_norm=39.064 steps/s=13.709
+[TRAIN] step=000450 loss=1.814687 l1=0.205104 kld=0.160958 grad_norm=47.124 steps/s=13.724
+[TRAIN] step=000500 loss=1.690793 l1=0.222464 kld=0.146833 grad_norm=37.560 steps/s=13.730
+[TRAIN] step=000550 loss=1.528504 l1=0.207874 kld=0.132063 grad_norm=31.898 steps/s=13.738
+[TRAIN] step=000600 loss=1.453365 l1=0.180632 kld=0.127273 grad_norm=35.495 steps/s=13.750
+[TRAIN] step=000650 loss=1.413831 l1=0.194962 kld=0.121887 grad_norm=32.337 steps/s=13.754
+[TRAIN] step=000700 loss=1.366860 l1=0.177814 kld=0.118905 grad_norm=33.381 steps/s=13.763
+[TRAIN] step=000750 loss=1.379327 l1=0.179454 kld=0.119987 grad_norm=39.411 steps/s=13.758
+[TRAIN] step=000800 loss=1.323509 l1=0.207213 kld=0.111630 grad_norm=29.213 steps/s=13.759
+[TRAIN] step=000850 loss=1.183253 l1=0.181071 kld=0.100218 grad_norm=29.751 steps/s=13.769
+[TRAIN] step=000900 loss=1.178038 l1=0.196070 kld=0.098197 grad_norm=32.300 steps/s=13.782
+[TRAIN] step=000950 loss=1.146596 l1=0.209879 kld=0.093672 grad_norm=29.237 steps/s=13.784
+[TRAIN] step=001000 loss=1.108931 l1=0.197420 kld=0.091151 grad_norm=31.308 steps/s=13.861
+[EVAL] step=001000 eval_loss=1.104037 eval_l1=0.187756 eval_kld=0.091628
+[SAVE] best.pt step=1000 best_eval_l1=0.187756
+[TRAIN] step=001050 loss=0.982648 l1=0.193751 kld=0.078890 grad_norm=23.908 steps/s=13.054
+[TRAIN] step=001100 loss=1.035133 l1=0.205698 kld=0.082943 grad_norm=27.594 steps/s=13.096
+[TRAIN] step=001150 loss=0.993148 l1=0.219500 kld=0.077365 grad_norm=31.967 steps/s=13.125
+[TRAIN] step=001200 loss=0.916914 l1=0.212508 kld=0.070441 grad_norm=26.796 steps/s=13.159
+[TRAIN] step=001250 loss=0.850180 l1=0.181905 kld=0.066828 grad_norm=26.495 steps/s=13.194
+[TRAIN] step=001300 loss=0.910401 l1=0.201304 kld=0.070910 grad_norm=30.366 steps/s=13.223
+[TRAIN] step=001350 loss=0.824790 l1=0.197266 kld=0.062752 grad_norm=28.545 steps/s=13.252
+[TRAIN] step=001400 loss=0.787733 l1=0.187725 kld=0.060001 grad_norm=23.697 steps/s=13.280
+[TRAIN] step=001450 loss=0.742929 l1=0.185577 kld=0.055735 grad_norm=24.497 steps/s=13.301
+[TRAIN] step=001500 loss=0.700000 l1=0.183999 kld=0.051600 grad_norm=24.131 steps/s=13.325
+[TRAIN] step=001550 loss=0.637168 l1=0.172618 kld=0.046455 grad_norm=21.156 steps/s=13.349
+[TRAIN] step=001600 loss=0.684233 l1=0.196746 kld=0.048749 grad_norm=27.273 steps/s=13.367
+[TRAIN] step=001650 loss=0.632836 l1=0.155034 kld=0.047780 grad_norm=24.148 steps/s=13.386
+[TRAIN] step=001700 loss=0.621634 l1=0.196236 kld=0.042540 grad_norm=21.623 steps/s=13.405
+[TRAIN] step=001750 loss=0.611648 l1=0.174587 kld=0.043706 grad_norm=19.542 steps/s=13.423
+[TRAIN] step=001800 loss=0.581780 l1=0.199964 kld=0.038182 grad_norm=18.298 steps/s=13.443
+[TRAIN] step=001850 loss=0.575379 l1=0.201894 kld=0.037349 grad_norm=20.385 steps/s=13.458
+[TRAIN] step=001900 loss=0.513866 l1=0.150154 kld=0.036371 grad_norm=21.615 steps/s=13.472
+[TRAIN] step=001950 loss=0.546081 l1=0.212457 kld=0.033362 grad_norm=22.508 steps/s=13.516
+[TRAIN] step=002000 loss=0.459929 l1=0.152964 kld=0.030697 grad_norm=17.201 steps/s=13.590
+[EVAL] step=002000 eval_loss=0.495312 eval_l1=0.176727 eval_kld=0.031859
+[SAVE] best.pt step=2000 best_eval_l1=0.176727
+[TRAIN] step=002050 loss=0.505491 l1=0.174833 kld=0.033066 grad_norm=19.743 steps/s=13.247
+[TRAIN] step=002100 loss=0.449315 l1=0.158315 kld=0.029100 grad_norm=19.139 steps/s=13.262
+[TRAIN] step=002150 loss=0.445624 l1=0.163317 kld=0.028231 grad_norm=15.629 steps/s=13.280
+[TRAIN] step=002200 loss=0.416950 l1=0.154939 kld=0.026201 grad_norm=21.102 steps/s=13.301
+[TRAIN] step=002250 loss=0.429238 l1=0.190504 kld=0.023873 grad_norm=18.346 steps/s=13.317
+[TRAIN] step=002300 loss=0.403108 l1=0.152971 kld=0.025014 grad_norm=15.042 steps/s=13.333
+[TRAIN] step=002350 loss=0.395447 l1=0.169478 kld=0.022597 grad_norm=13.802 steps/s=13.345
+[TRAIN] step=002400 loss=0.419574 l1=0.171674 kld=0.024790 grad_norm=17.867 steps/s=13.362
+[TRAIN] step=002450 loss=0.372170 l1=0.145695 kld=0.022648 grad_norm=17.399 steps/s=13.383
+[TRAIN] step=002500 loss=0.370774 l1=0.185777 kld=0.018500 grad_norm=14.211 steps/s=13.403
+[TRAIN] step=002550 loss=0.348053 l1=0.167837 kld=0.018022 grad_norm=13.188 steps/s=13.423
+[TRAIN] step=002600 loss=0.383363 l1=0.180028 kld=0.020334 grad_norm=15.426 steps/s=13.437
+[TRAIN] step=002650 loss=0.322103 l1=0.156380 kld=0.016572 grad_norm=14.659 steps/s=13.449
+[TRAIN] step=002700 loss=0.321381 l1=0.152179 kld=0.016920 grad_norm=14.129 steps/s=13.450
+[TRAIN] step=002750 loss=0.291801 l1=0.138335 kld=0.015347 grad_norm=15.053 steps/s=13.458
+[TRAIN] step=002800 loss=0.313757 l1=0.149139 kld=0.016462 grad_norm=13.943 steps/s=13.474
+[TRAIN] step=002850 loss=0.309818 l1=0.175173 kld=0.013465 grad_norm=14.926 steps/s=13.485
+[TRAIN] step=002900 loss=0.309618 l1=0.160782 kld=0.014884 grad_norm=13.456 steps/s=13.509
+[TRAIN] step=002950 loss=0.298797 l1=0.163938 kld=0.013486 grad_norm=12.821 steps/s=13.555
+[TRAIN] step=003000 loss=0.298257 l1=0.156431 kld=0.014183 grad_norm=12.304 steps/s=13.609
+[EVAL] step=003000 eval_loss=0.300995 eval_l1=0.167074 eval_kld=0.013392
+[SAVE] best.pt step=3000 best_eval_l1=0.167074
+[TRAIN] step=003050 loss=0.299122 l1=0.149630 kld=0.014949 grad_norm=12.212 steps/s=13.342
+[TRAIN] step=003100 loss=0.299449 l1=0.173194 kld=0.012626 grad_norm=13.418 steps/s=13.354
+[TRAIN] step=003150 loss=0.278835 l1=0.163402 kld=0.011543 grad_norm=10.794 steps/s=13.372
+[TRAIN] step=003200 loss=0.275856 l1=0.164012 kld=0.011184 grad_norm=10.447 steps/s=13.380
+[TRAIN] step=003250 loss=0.259614 l1=0.157639 kld=0.010198 grad_norm=12.274 steps/s=13.389
+[TRAIN] step=003300 loss=0.256130 l1=0.128189 kld=0.012794 grad_norm=11.659 steps/s=13.398
+[TRAIN] step=003350 loss=0.266089 l1=0.150506 kld=0.011558 grad_norm=10.740 steps/s=13.412
+[TRAIN] step=003400 loss=0.264727 l1=0.157884 kld=0.010684 grad_norm=10.602 steps/s=13.425
+[TRAIN] step=003450 loss=0.270066 l1=0.170214 kld=0.009985 grad_norm=13.501 steps/s=13.439
+[TRAIN] step=003500 loss=0.280595 l1=0.168799 kld=0.011180 grad_norm=11.573 steps/s=13.448
+[TRAIN] step=003550 loss=0.272173 l1=0.178535 kld=0.009364 grad_norm=10.286 steps/s=13.458
+[TRAIN] step=003600 loss=0.230858 l1=0.137114 kld=0.009374 grad_norm=10.669 steps/s=13.465
+[TRAIN] step=003650 loss=0.224122 l1=0.138597 kld=0.008552 grad_norm=13.270 steps/s=13.474
+[TRAIN] step=003700 loss=0.255478 l1=0.170198 kld=0.008528 grad_norm=10.795 steps/s=13.481
+[TRAIN] step=003750 loss=0.233798 l1=0.156579 kld=0.007722 grad_norm=11.325 steps/s=13.490
+[TRAIN] step=003800 loss=0.236845 l1=0.153610 kld=0.008324 grad_norm=10.041 steps/s=13.495
+[TRAIN] step=003850 loss=0.240921 l1=0.159216 kld=0.008170 grad_norm=10.064 steps/s=13.501
+[TRAIN] step=003900 loss=0.248962 l1=0.179636 kld=0.006933 grad_norm=9.458 steps/s=13.517
+[TRAIN] step=003950 loss=0.246432 l1=0.168332 kld=0.007810 grad_norm=10.632 steps/s=13.562
+[TRAIN] step=004000 loss=0.229954 l1=0.139768 kld=0.009019 grad_norm=10.093 steps/s=13.578
+[EVAL] step=004000 eval_loss=0.241300 eval_l1=0.163701 eval_kld=0.007760
+[SAVE] best.pt step=4000 best_eval_l1=0.163701
+[TRAIN] step=004050 loss=0.229572 l1=0.156258 kld=0.007331 grad_norm=11.296 steps/s=13.395
+[TRAIN] step=004100 loss=0.243898 l1=0.163916 kld=0.007998 grad_norm=8.723 steps/s=13.403
+[TRAIN] step=004150 loss=0.217972 l1=0.137634 kld=0.008034 grad_norm=10.259 steps/s=13.410
+[TRAIN] step=004200 loss=0.223871 l1=0.159426 kld=0.006445 grad_norm=9.227 steps/s=13.417
+[TRAIN] step=004250 loss=0.223949 l1=0.158412 kld=0.006554 grad_norm=8.950 steps/s=13.425
+[TRAIN] step=004300 loss=0.229140 l1=0.162663 kld=0.006648 grad_norm=8.165 steps/s=13.436
+[TRAIN] step=004350 loss=0.197221 l1=0.133808 kld=0.006341 grad_norm=10.243 steps/s=13.447
+[TRAIN] step=004400 loss=0.210645 l1=0.150361 kld=0.006028 grad_norm=8.329 steps/s=13.454
+[TRAIN] step=004450 loss=0.244698 l1=0.181099 kld=0.006360 grad_norm=10.464 steps/s=13.461
+[TRAIN] step=004500 loss=0.236737 l1=0.179922 kld=0.005682 grad_norm=8.827 steps/s=13.470
+[TRAIN] step=004550 loss=0.209292 l1=0.149719 kld=0.005957 grad_norm=8.713 steps/s=13.478
+[TRAIN] step=004600 loss=0.200195 l1=0.142343 kld=0.005785 grad_norm=8.186 steps/s=13.486
+[TRAIN] step=004650 loss=0.217611 l1=0.163321 kld=0.005429 grad_norm=8.452 steps/s=13.492
+[TRAIN] step=004700 loss=0.173495 l1=0.120114 kld=0.005338 grad_norm=8.511 steps/s=13.498
+[TRAIN] step=004750 loss=0.200716 l1=0.148409 kld=0.005231 grad_norm=8.007 steps/s=13.503
+[TRAIN] step=004800 loss=0.232947 l1=0.183682 kld=0.004927 grad_norm=8.152 steps/s=13.512
+[TRAIN] step=004850 loss=0.219446 l1=0.165979 kld=0.005347 grad_norm=8.151 steps/s=13.517
+[TRAIN] step=004900 loss=0.200537 l1=0.145634 kld=0.005490 grad_norm=8.804 steps/s=13.538
+[TRAIN] step=004950 loss=0.191515 l1=0.139810 kld=0.005170 grad_norm=7.442 steps/s=13.554
+[TRAIN] step=005000 loss=0.184962 l1=0.137142 kld=0.004782 grad_norm=10.087 steps/s=13.557
+[EVAL] step=005000 eval_loss=0.205557 eval_l1=0.157029 eval_kld=0.004853
+[SAVE] best.pt step=5000 best_eval_l1=0.157029
+[SAVE] latest.pt step=5000
+[TRAIN] step=005050 loss=0.194298 l1=0.141585 kld=0.005271 grad_norm=8.634 steps/s=13.324
+[TRAIN] step=005100 loss=0.179411 l1=0.137522 kld=0.004189 grad_norm=7.382 steps/s=13.332
+[TRAIN] step=005150 loss=0.171695 l1=0.116548 kld=0.005515 grad_norm=8.901 steps/s=13.338
+[TRAIN] step=005200 loss=0.181920 l1=0.137313 kld=0.004461 grad_norm=7.923 steps/s=13.346
+[TRAIN] step=005250 loss=0.205701 l1=0.159483 kld=0.004622 grad_norm=9.959 steps/s=13.355
+[TRAIN] step=005300 loss=0.174615 l1=0.131233 kld=0.004338 grad_norm=9.405 steps/s=13.362
+[TRAIN] step=005350 loss=0.193309 l1=0.150549 kld=0.004276 grad_norm=7.564 steps/s=13.367
+[TRAIN] step=005400 loss=0.193382 l1=0.152333 kld=0.004105 grad_norm=7.697 steps/s=13.373
+[TRAIN] step=005450 loss=0.206071 l1=0.170461 kld=0.003561 grad_norm=6.628 steps/s=13.379
+[TRAIN] step=005500 loss=0.181874 l1=0.150214 kld=0.003166 grad_norm=5.566 steps/s=13.385
+[TRAIN] step=005550 loss=0.197946 l1=0.162620 kld=0.003533 grad_norm=7.098 steps/s=13.391
+[TRAIN] step=005600 loss=0.201549 l1=0.166323 kld=0.003523 grad_norm=6.189 steps/s=13.396
+[TRAIN] step=005650 loss=0.181931 l1=0.143129 kld=0.003880 grad_norm=6.937 steps/s=13.403
+[TRAIN] step=005700 loss=0.188450 l1=0.154117 kld=0.003433 grad_norm=7.105 steps/s=13.408
+[TRAIN] step=005750 loss=0.184191 l1=0.150876 kld=0.003332 grad_norm=7.727 steps/s=13.415
+[TRAIN] step=005800 loss=0.183209 l1=0.149568 kld=0.003364 grad_norm=6.882 steps/s=13.434
+[TRAIN] step=005850 loss=0.153022 l1=0.117887 kld=0.003514 grad_norm=7.924 steps/s=13.444
+[TRAIN] step=005900 loss=0.210181 l1=0.177607 kld=0.003257 grad_norm=7.147 steps/s=13.449
+[TRAIN] step=005950 loss=0.169106 l1=0.139779 kld=0.002933 grad_norm=6.338 steps/s=13.453
+[TRAIN] step=006000 loss=0.162991 l1=0.135231 kld=0.002776 grad_norm=6.028 steps/s=13.458
+[EVAL] step=006000 eval_loss=0.184158 eval_l1=0.154094 eval_kld=0.003006
+[SAVE] best.pt step=6000 best_eval_l1=0.154094
+[TRAIN] step=006050 loss=0.152753 l1=0.121382 kld=0.003137 grad_norm=8.200 steps/s=13.338
+[TRAIN] step=006100 loss=0.158116 l1=0.133810 kld=0.002431 grad_norm=6.078 steps/s=13.346
+[TRAIN] step=006150 loss=0.195593 l1=0.169115 kld=0.002648 grad_norm=7.355 steps/s=13.354
+[TRAIN] step=006200 loss=0.180052 l1=0.152877 kld=0.002717 grad_norm=6.440 steps/s=13.362
+[TRAIN] step=006250 loss=0.174028 l1=0.149604 kld=0.002442 grad_norm=6.170 steps/s=13.367
+[TRAIN] step=006300 loss=0.215694 l1=0.188683 kld=0.002701 grad_norm=6.838 steps/s=13.373
+[TRAIN] step=006350 loss=0.175685 l1=0.149925 kld=0.002576 grad_norm=6.644 steps/s=13.379
+[TRAIN] step=006400 loss=0.196368 l1=0.171956 kld=0.002441 grad_norm=6.879 steps/s=13.388
+[TRAIN] step=006450 loss=0.159928 l1=0.132071 kld=0.002786 grad_norm=5.846 steps/s=13.394
+[TRAIN] step=006500 loss=0.153374 l1=0.130099 kld=0.002328 grad_norm=6.345 steps/s=13.397
+[TRAIN] step=006550 loss=0.163628 l1=0.142165 kld=0.002146 grad_norm=5.526 steps/s=13.401
+[TRAIN] step=006600 loss=0.161175 l1=0.136498 kld=0.002468 grad_norm=6.076 steps/s=13.405
+[TRAIN] step=006650 loss=0.165312 l1=0.144160 kld=0.002115 grad_norm=5.046 steps/s=13.409
+[TRAIN] step=006700 loss=0.175265 l1=0.156196 kld=0.001907 grad_norm=5.003 steps/s=13.413
+[TRAIN] step=006750 loss=0.180288 l1=0.161881 kld=0.001841 grad_norm=5.432 steps/s=13.428
+[TRAIN] step=006800 loss=0.184668 l1=0.167118 kld=0.001755 grad_norm=5.887 steps/s=13.437
+[TRAIN] step=006850 loss=0.128853 l1=0.111384 kld=0.001747 grad_norm=4.169 steps/s=13.441
+[TRAIN] step=006900 loss=0.150622 l1=0.133429 kld=0.001719 grad_norm=6.011 steps/s=13.445
+[TRAIN] step=006950 loss=0.141664 l1=0.122082 kld=0.001958 grad_norm=5.278 steps/s=13.448
+[TRAIN] step=007000 loss=0.147159 l1=0.128948 kld=0.001821 grad_norm=5.064 steps/s=13.451
+[EVAL] step=007000 eval_loss=0.165712 eval_l1=0.149629 eval_kld=0.001608
+[SAVE] best.pt step=7000 best_eval_l1=0.149629
+[TRAIN] step=007050 loss=0.138521 l1=0.121930 kld=0.001659 grad_norm=5.652 steps/s=13.345
+[TRAIN] step=007100 loss=0.142045 l1=0.126252 kld=0.001579 grad_norm=5.307 steps/s=13.350
+[TRAIN] step=007150 loss=0.143126 l1=0.126617 kld=0.001651 grad_norm=4.991 steps/s=13.354
+[TRAIN] step=007200 loss=0.181782 l1=0.165084 kld=0.001670 grad_norm=5.385 steps/s=13.360
+[TRAIN] step=007250 loss=0.170383 l1=0.154851 kld=0.001553 grad_norm=5.244 steps/s=13.364
+[TRAIN] step=007300 loss=0.178114 l1=0.164805 kld=0.001331 grad_norm=5.548 steps/s=13.371
+[TRAIN] step=007350 loss=0.155034 l1=0.140625 kld=0.001441 grad_norm=5.691 steps/s=13.375
+[TRAIN] step=007400 loss=0.160511 l1=0.147995 kld=0.001252 grad_norm=4.451 steps/s=13.380
+[TRAIN] step=007450 loss=0.170458 l1=0.158968 kld=0.001149 grad_norm=4.706 steps/s=13.385
+[TRAIN] step=007500 loss=0.173791 l1=0.160491 kld=0.001330 grad_norm=4.803 steps/s=13.392
+[TRAIN] step=007550 loss=0.135900 l1=0.124673 kld=0.001123 grad_norm=5.325 steps/s=13.396
+[TRAIN] step=007600 loss=0.158067 l1=0.146667 kld=0.001140 grad_norm=4.966 steps/s=13.400
+[TRAIN] step=007650 loss=0.159670 l1=0.145482 kld=0.001419 grad_norm=4.687 steps/s=13.404
+[TRAIN] step=007700 loss=0.118190 l1=0.106459 kld=0.001173 grad_norm=4.719 steps/s=13.421
+[TRAIN] step=007750 loss=0.142325 l1=0.132517 kld=0.000981 grad_norm=3.991 steps/s=13.448
+[TRAIN] step=007800 loss=0.168993 l1=0.158169 kld=0.001082 grad_norm=4.836 steps/s=13.452
+[TRAIN] step=007850 loss=0.109145 l1=0.098170 kld=0.001098 grad_norm=4.044 steps/s=13.455
+[TRAIN] step=007900 loss=0.133201 l1=0.123830 kld=0.000937 grad_norm=5.887 steps/s=13.458
+[TRAIN] step=007950 loss=0.174623 l1=0.166349 kld=0.000827 grad_norm=3.682 steps/s=13.462
+[TRAIN] step=008000 loss=0.183971 l1=0.173531 kld=0.001044 grad_norm=4.191 steps/s=13.465
+[EVAL] step=008000 eval_loss=0.162305 eval_l1=0.153400 eval_kld=0.000890
+[TRAIN] step=008050 loss=0.161236 l1=0.153823 kld=0.000741 grad_norm=4.438 steps/s=13.397
+[TRAIN] step=008100 loss=0.150863 l1=0.142241 kld=0.000862 grad_norm=4.404 steps/s=13.401
+[TRAIN] step=008150 loss=0.160511 l1=0.152717 kld=0.000779 grad_norm=4.030 steps/s=13.407
+[TRAIN] step=008200 loss=0.155663 l1=0.148679 kld=0.000698 grad_norm=4.529 steps/s=13.411
+[TRAIN] step=008250 loss=0.143849 l1=0.136334 kld=0.000751 grad_norm=4.680 steps/s=13.415
+[TRAIN] step=008300 loss=0.161861 l1=0.153331 kld=0.000853 grad_norm=4.906 steps/s=13.418
+[TRAIN] step=008350 loss=0.128303 l1=0.121509 kld=0.000679 grad_norm=4.357 steps/s=13.423
+[TRAIN] step=008400 loss=0.155527 l1=0.148379 kld=0.000715 grad_norm=5.081 steps/s=13.427
+[TRAIN] step=008450 loss=0.152009 l1=0.145881 kld=0.000613 grad_norm=4.871 steps/s=13.430
+[TRAIN] step=008500 loss=0.142255 l1=0.136306 kld=0.000595 grad_norm=3.553 steps/s=13.435
+[TRAIN] step=008550 loss=0.125990 l1=0.120346 kld=0.000564 grad_norm=2.872 steps/s=13.440
+[TRAIN] step=008600 loss=0.187692 l1=0.182085 kld=0.000561 grad_norm=3.412 steps/s=13.442
+[TRAIN] step=008650 loss=0.146321 l1=0.139503 kld=0.000682 grad_norm=3.907 steps/s=13.446
+[TRAIN] step=008700 loss=0.140544 l1=0.135616 kld=0.000493 grad_norm=4.156 steps/s=13.461
+[TRAIN] step=008750 loss=0.135030 l1=0.130080 kld=0.000495 grad_norm=3.124 steps/s=13.479
+[TRAIN] step=008800 loss=0.171118 l1=0.166211 kld=0.000491 grad_norm=3.920 steps/s=13.482
+[TRAIN] step=008850 loss=0.181809 l1=0.177052 kld=0.000476 grad_norm=4.398 steps/s=13.487
+[TRAIN] step=008900 loss=0.140189 l1=0.134999 kld=0.000519 grad_norm=3.613 steps/s=13.492
+[TRAIN] step=008950 loss=0.172487 l1=0.168194 kld=0.000429 grad_norm=4.040 steps/s=13.494
+[TRAIN] step=009000 loss=0.168562 l1=0.164510 kld=0.000405 grad_norm=3.803 steps/s=13.499
+[EVAL] step=009000 eval_loss=0.153140 eval_l1=0.148572 eval_kld=0.000457
+[SAVE] best.pt step=9000 best_eval_l1=0.148572
+[TRAIN] step=009050 loss=0.131627 l1=0.126629 kld=0.000500 grad_norm=4.012 steps/s=13.417
+[TRAIN] step=009100 loss=0.139834 l1=0.135630 kld=0.000420 grad_norm=3.532 steps/s=13.420
+[TRAIN] step=009150 loss=0.163896 l1=0.159757 kld=0.000414 grad_norm=3.272 steps/s=13.427
+[TRAIN] step=009200 loss=0.134214 l1=0.130730 kld=0.000348 grad_norm=3.065 steps/s=13.432
+[TRAIN] step=009250 loss=0.153159 l1=0.149293 kld=0.000387 grad_norm=3.014 steps/s=13.437
+[TRAIN] step=009300 loss=0.147500 l1=0.144067 kld=0.000343 grad_norm=3.942 steps/s=13.440
+[TRAIN] step=009350 loss=0.134677 l1=0.131215 kld=0.000346 grad_norm=3.937 steps/s=13.445
+[TRAIN] step=009400 loss=0.156815 l1=0.152454 kld=0.000436 grad_norm=3.515 steps/s=13.450
+[TRAIN] step=009450 loss=0.138377 l1=0.133560 kld=0.000482 grad_norm=3.730 steps/s=13.455
+[TRAIN] step=009500 loss=0.136993 l1=0.133482 kld=0.000351 grad_norm=3.681 steps/s=13.460
+[TRAIN] step=009550 loss=0.161402 l1=0.158259 kld=0.000314 grad_norm=3.306 steps/s=13.465
+[TRAIN] step=009600 loss=0.150689 l1=0.147712 kld=0.000298 grad_norm=3.572 steps/s=13.467
+[TRAIN] step=009650 loss=0.141172 l1=0.137733 kld=0.000344 grad_norm=3.233 steps/s=13.470
+[TRAIN] step=009700 loss=0.140386 l1=0.137197 kld=0.000319 grad_norm=3.369 steps/s=13.483
+[TRAIN] step=009750 loss=0.135937 l1=0.133191 kld=0.000275 grad_norm=3.180 steps/s=13.496
+[TRAIN] step=009800 loss=0.127388 l1=0.124329 kld=0.000306 grad_norm=3.219 steps/s=13.498
+[TRAIN] step=009850 loss=0.112322 l1=0.109392 kld=0.000293 grad_norm=4.174 steps/s=13.502
+[TRAIN] step=009900 loss=0.148409 l1=0.144905 kld=0.000350 grad_norm=3.177 steps/s=13.505
+[TRAIN] step=009950 loss=0.119029 l1=0.116309 kld=0.000272 grad_norm=3.812 steps/s=13.506
+[TRAIN] step=010000 loss=0.168769 l1=0.166271 kld=0.000250 grad_norm=2.603 steps/s=13.509
+[EVAL] step=010000 eval_loss=0.153596 eval_l1=0.151015 eval_kld=0.000258
+[SAVE] latest.pt step=10000
+[TRAIN] step=010050 loss=0.171110 l1=0.168683 kld=0.000243 grad_norm=3.349 steps/s=13.410
+[TRAIN] step=010100 loss=0.131572 l1=0.128796 kld=0.000278 grad_norm=3.963 steps/s=13.414
+[TRAIN] step=010150 loss=0.126023 l1=0.123765 kld=0.000226 grad_norm=3.632 steps/s=13.418
+[TRAIN] step=010200 loss=0.135655 l1=0.132973 kld=0.000268 grad_norm=3.359 steps/s=13.421
+[TRAIN] step=010250 loss=0.130156 l1=0.127596 kld=0.000256 grad_norm=3.029 steps/s=13.424
+[TRAIN] step=010300 loss=0.128427 l1=0.125778 kld=0.000265 grad_norm=3.129 steps/s=13.428
+[TRAIN] step=010350 loss=0.153687 l1=0.151410 kld=0.000228 grad_norm=3.677 steps/s=13.431
+[TRAIN] step=010400 loss=0.127330 l1=0.124847 kld=0.000248 grad_norm=2.821 steps/s=13.435
+[TRAIN] step=010450 loss=0.127553 l1=0.125550 kld=0.000200 grad_norm=2.895 steps/s=13.439
+[TRAIN] step=010500 loss=0.153509 l1=0.151698 kld=0.000181 grad_norm=3.877 steps/s=13.444
+[TRAIN] step=010550 loss=0.109026 l1=0.106675 kld=0.000235 grad_norm=2.602 steps/s=13.447
+[TRAIN] step=010600 loss=0.130028 l1=0.127557 kld=0.000247 grad_norm=2.552 steps/s=13.453
+[TRAIN] step=010650 loss=0.134206 l1=0.132418 kld=0.000179 grad_norm=3.837 steps/s=13.465
+[TRAIN] step=010700 loss=0.124897 l1=0.123365 kld=0.000153 grad_norm=3.011 steps/s=13.470
+[TRAIN] step=010750 loss=0.176913 l1=0.175455 kld=0.000146 grad_norm=3.220 steps/s=13.472
+[TRAIN] step=010800 loss=0.130291 l1=0.128807 kld=0.000148 grad_norm=2.805 steps/s=13.477
+[TRAIN] step=010850 loss=0.142726 l1=0.141247 kld=0.000148 grad_norm=2.776 steps/s=13.480
+[TRAIN] step=010900 loss=0.118930 l1=0.117277 kld=0.000165 grad_norm=3.489 steps/s=13.484
+[TRAIN] step=010950 loss=0.146771 l1=0.145360 kld=0.000141 grad_norm=2.878 steps/s=13.487
+[TRAIN] step=011000 loss=0.137734 l1=0.135189 kld=0.000255 grad_norm=3.166 steps/s=13.490
+[EVAL] step=011000 eval_loss=0.148359 eval_l1=0.147073 eval_kld=0.000129
+[SAVE] best.pt step=11000 best_eval_l1=0.147073
+[TRAIN] step=011050 loss=0.142794 l1=0.141616 kld=0.000118 grad_norm=2.974 steps/s=13.417
+[TRAIN] step=011100 loss=0.130954 l1=0.129597 kld=0.000136 grad_norm=2.944 steps/s=13.420
+[TRAIN] step=011150 loss=0.134124 l1=0.131523 kld=0.000260 grad_norm=2.786 steps/s=13.423
+[TRAIN] step=011200 loss=0.137532 l1=0.136331 kld=0.000120 grad_norm=3.373 steps/s=13.426
+[TRAIN] step=011250 loss=0.162744 l1=0.161537 kld=0.000121 grad_norm=3.250 steps/s=13.428
+[TRAIN] step=011300 loss=0.147130 l1=0.145911 kld=0.000122 grad_norm=3.447 steps/s=13.432
+[TRAIN] step=011350 loss=0.153252 l1=0.152206 kld=0.000105 grad_norm=2.591 steps/s=13.435
+[TRAIN] step=011400 loss=0.122904 l1=0.121887 kld=0.000102 grad_norm=2.301 steps/s=13.439
+[TRAIN] step=011450 loss=0.143890 l1=0.142624 kld=0.000127 grad_norm=2.639 steps/s=13.442
+[TRAIN] step=011500 loss=0.127832 l1=0.126641 kld=0.000119 grad_norm=2.579 steps/s=13.444
+[TRAIN] step=011550 loss=0.098559 l1=0.097289 kld=0.000127 grad_norm=2.692 steps/s=13.449
+[TRAIN] step=011600 loss=0.129734 l1=0.128510 kld=0.000122 grad_norm=2.895 steps/s=13.458
+[TRAIN] step=011650 loss=0.132145 l1=0.131247 kld=0.000090 grad_norm=2.456 steps/s=13.461
+[TRAIN] step=011700 loss=0.133642 l1=0.132415 kld=0.000123 grad_norm=2.214 steps/s=13.464
+[TRAIN] step=011750 loss=0.151254 l1=0.150142 kld=0.000111 grad_norm=3.356 steps/s=13.466
+[TRAIN] step=011800 loss=0.151320 l1=0.150277 kld=0.000104 grad_norm=2.773 steps/s=13.470
+[TRAIN] step=011850 loss=0.125817 l1=0.124894 kld=0.000092 grad_norm=2.853 steps/s=13.473
+[TRAIN] step=011900 loss=0.148570 l1=0.147651 kld=0.000092 grad_norm=2.740 steps/s=13.474
+[TRAIN] step=011950 loss=0.148427 l1=0.147439 kld=0.000099 grad_norm=2.387 steps/s=13.477
+[TRAIN] step=012000 loss=0.117637 l1=0.116464 kld=0.000117 grad_norm=3.024 steps/s=13.480
+[EVAL] step=012000 eval_loss=0.145321 eval_l1=0.144361 eval_kld=0.000096
+[SAVE] best.pt step=12000 best_eval_l1=0.144361
+[TRAIN] step=012050 loss=0.125502 l1=0.124610 kld=0.000089 grad_norm=2.770 steps/s=13.420
+[TRAIN] step=012100 loss=0.108724 l1=0.107782 kld=0.000094 grad_norm=3.146 steps/s=13.422
+[TRAIN] step=012150 loss=0.140007 l1=0.138880 kld=0.000113 grad_norm=2.692 steps/s=13.425
+[TRAIN] step=012200 loss=0.127815 l1=0.126745 kld=0.000107 grad_norm=2.705 steps/s=13.429
+[TRAIN] step=012250 loss=0.133730 l1=0.132874 kld=0.000086 grad_norm=3.208 steps/s=13.432
+[TRAIN] step=012300 loss=0.121866 l1=0.121105 kld=0.000076 grad_norm=2.073 steps/s=13.436
+[TRAIN] step=012350 loss=0.137929 l1=0.136979 kld=0.000095 grad_norm=2.457 steps/s=13.438
+[TRAIN] step=012400 loss=0.125185 l1=0.124165 kld=0.000102 grad_norm=3.311 steps/s=13.441
+[TRAIN] step=012450 loss=0.131739 l1=0.130821 kld=0.000092 grad_norm=2.769 steps/s=13.444
+[TRAIN] step=012500 loss=0.139333 l1=0.138525 kld=0.000081 grad_norm=3.721 steps/s=13.448
+[TRAIN] step=012550 loss=0.120698 l1=0.119658 kld=0.000104 grad_norm=2.952 steps/s=13.458
+[TRAIN] step=012600 loss=0.142910 l1=0.142041 kld=0.000087 grad_norm=3.050 steps/s=13.471
+[TRAIN] step=012650 loss=0.138997 l1=0.138179 kld=0.000082 grad_norm=1.976 steps/s=13.473
+[TRAIN] step=012700 loss=0.115877 l1=0.115018 kld=0.000086 grad_norm=2.623 steps/s=13.474
+[TRAIN] step=012750 loss=0.136852 l1=0.135978 kld=0.000087 grad_norm=2.601 steps/s=13.476
+[TRAIN] step=012800 loss=0.159845 l1=0.159096 kld=0.000075 grad_norm=2.424 steps/s=13.479
+[TRAIN] step=012850 loss=0.127410 l1=0.126328 kld=0.000108 grad_norm=2.056 steps/s=13.480
+[TRAIN] step=012900 loss=0.127115 l1=0.126373 kld=0.000074 grad_norm=2.263 steps/s=13.483
+[TRAIN] step=012950 loss=0.117880 l1=0.117021 kld=0.000086 grad_norm=2.306 steps/s=13.485
+[TRAIN] step=013000 loss=0.128054 l1=0.127175 kld=0.000088 grad_norm=2.577 steps/s=13.487
+[EVAL] step=013000 eval_loss=0.145677 eval_l1=0.144905 eval_kld=0.000077
+[TRAIN] step=013050 loss=0.138567 l1=0.137740 kld=0.000083 grad_norm=3.649 steps/s=13.447
+[TRAIN] step=013100 loss=0.123128 l1=0.122364 kld=0.000076 grad_norm=2.848 steps/s=13.449
+[TRAIN] step=013150 loss=0.107930 l1=0.107218 kld=0.000071 grad_norm=2.204 steps/s=13.451
+[TRAIN] step=013200 loss=0.126334 l1=0.125567 kld=0.000077 grad_norm=2.538 steps/s=13.454
+[TRAIN] step=013250 loss=0.155455 l1=0.154775 kld=0.000068 grad_norm=2.488 steps/s=13.458
+[TRAIN] step=013300 loss=0.145763 l1=0.145066 kld=0.000070 grad_norm=2.773 steps/s=13.462
+[TRAIN] step=013350 loss=0.168011 l1=0.167342 kld=0.000067 grad_norm=2.309 steps/s=13.464
+[TRAIN] step=013400 loss=0.119543 l1=0.118783 kld=0.000076 grad_norm=2.835 steps/s=13.466
+[TRAIN] step=013450 loss=0.144965 l1=0.144250 kld=0.000072 grad_norm=2.811 steps/s=13.468
+[TRAIN] step=013500 loss=0.134813 l1=0.134172 kld=0.000064 grad_norm=2.741 steps/s=13.472
+[TRAIN] step=013550 loss=0.136390 l1=0.135711 kld=0.000068 grad_norm=2.983 steps/s=13.481
+[TRAIN] step=013600 loss=0.121004 l1=0.120311 kld=0.000069 grad_norm=2.289 steps/s=13.484
+[TRAIN] step=013650 loss=0.134034 l1=0.133392 kld=0.000064 grad_norm=3.301 steps/s=13.488
+[TRAIN] step=013700 loss=0.134129 l1=0.133370 kld=0.000076 grad_norm=2.894 steps/s=13.489
+[TRAIN] step=013750 loss=0.115632 l1=0.115066 kld=0.000057 grad_norm=2.004 steps/s=13.492
+[TRAIN] step=013800 loss=0.140004 l1=0.139322 kld=0.000068 grad_norm=2.243 steps/s=13.494
+[TRAIN] step=013850 loss=0.140889 l1=0.140266 kld=0.000062 grad_norm=2.508 steps/s=13.496
+[TRAIN] step=013900 loss=0.150014 l1=0.149341 kld=0.000067 grad_norm=2.364 steps/s=13.498
+[TRAIN] step=013950 loss=0.125781 l1=0.125008 kld=0.000077 grad_norm=2.396 steps/s=13.501
+[TRAIN] step=014000 loss=0.126532 l1=0.125932 kld=0.000060 grad_norm=2.727 steps/s=13.503
+[EVAL] step=014000 eval_loss=0.144174 eval_l1=0.143570 eval_kld=0.000060
+[SAVE] best.pt step=14000 best_eval_l1=0.143570
+[TRAIN] step=014050 loss=0.164151 l1=0.163542 kld=0.000061 grad_norm=2.592 steps/s=13.445
+[TRAIN] step=014100 loss=0.153426 l1=0.152853 kld=0.000057 grad_norm=2.335 steps/s=13.447
+[TRAIN] step=014150 loss=0.099600 l1=0.098948 kld=0.000065 grad_norm=3.030 steps/s=13.450
+[TRAIN] step=014200 loss=0.145855 l1=0.145243 kld=0.000061 grad_norm=2.565 steps/s=13.451
+[TRAIN] step=014250 loss=0.112774 l1=0.112160 kld=0.000061 grad_norm=2.549 steps/s=13.453
+[TRAIN] step=014300 loss=0.115644 l1=0.115004 kld=0.000064 grad_norm=2.925 steps/s=13.455
+[TRAIN] step=014350 loss=0.131185 l1=0.130562 kld=0.000062 grad_norm=2.900 steps/s=13.459
+[TRAIN] step=014400 loss=0.144913 l1=0.144277 kld=0.000064 grad_norm=2.696 steps/s=13.461
+[TRAIN] step=014450 loss=0.111325 l1=0.110672 kld=0.000065 grad_norm=2.347 steps/s=13.466
+[TRAIN] step=014500 loss=0.104101 l1=0.103600 kld=0.000050 grad_norm=2.919 steps/s=13.476
+[TRAIN] step=014550 loss=0.163122 l1=0.162553 kld=0.000057 grad_norm=3.706 steps/s=13.482
+[TRAIN] step=014600 loss=0.131162 l1=0.130659 kld=0.000050 grad_norm=2.339 steps/s=13.484
+[TRAIN] step=014650 loss=0.128542 l1=0.127861 kld=0.000068 grad_norm=2.143 steps/s=13.486
+[TRAIN] step=014700 loss=0.101322 l1=0.100804 kld=0.000052 grad_norm=2.093 steps/s=13.488
+[TRAIN] step=014750 loss=0.131837 l1=0.131248 kld=0.000059 grad_norm=3.149 steps/s=13.491
+[TRAIN] step=014800 loss=0.134125 l1=0.133607 kld=0.000052 grad_norm=1.921 steps/s=13.493
+[TRAIN] step=014850 loss=0.159286 l1=0.158750 kld=0.000054 grad_norm=2.171 steps/s=13.495
+[TRAIN] step=014900 loss=0.124082 l1=0.123428 kld=0.000065 grad_norm=2.837 steps/s=13.497
+[TRAIN] step=014950 loss=0.169363 l1=0.168850 kld=0.000051 grad_norm=1.861 steps/s=13.499
+[TRAIN] step=015000 loss=0.141419 l1=0.140896 kld=0.000052 grad_norm=2.336 steps/s=13.501
+[EVAL] step=015000 eval_loss=0.146781 eval_l1=0.146252 eval_kld=0.000053
+[SAVE] latest.pt step=15000
+[TRAIN] step=015050 loss=0.113961 l1=0.113329 kld=0.000063 grad_norm=1.837 steps/s=13.437
+[TRAIN] step=015100 loss=0.132926 l1=0.132332 kld=0.000059 grad_norm=2.680 steps/s=13.439
+[TRAIN] step=015150 loss=0.127539 l1=0.127060 kld=0.000048 grad_norm=2.211 steps/s=13.441
+[TRAIN] step=015200 loss=0.113332 l1=0.112692 kld=0.000064 grad_norm=2.474 steps/s=13.444
+[TRAIN] step=015250 loss=0.123218 l1=0.122689 kld=0.000053 grad_norm=2.159 steps/s=13.445
+[TRAIN] step=015300 loss=0.147636 l1=0.147219 kld=0.000042 grad_norm=1.953 steps/s=13.448
+[TRAIN] step=015350 loss=0.137671 l1=0.137111 kld=0.000056 grad_norm=1.994 steps/s=13.451
+[TRAIN] step=015400 loss=0.119760 l1=0.119324 kld=0.000044 grad_norm=2.384 steps/s=13.454
+[TRAIN] step=015450 loss=0.133962 l1=0.133469 kld=0.000049 grad_norm=2.413 steps/s=13.464
+[TRAIN] step=015500 loss=0.118891 l1=0.118406 kld=0.000048 grad_norm=2.357 steps/s=13.471
+[TRAIN] step=015550 loss=0.147560 l1=0.147109 kld=0.000045 grad_norm=2.159 steps/s=13.473
+[TRAIN] step=015600 loss=0.116295 l1=0.115759 kld=0.000054 grad_norm=1.881 steps/s=13.476
+[TRAIN] step=015650 loss=0.116311 l1=0.115883 kld=0.000043 grad_norm=2.346 steps/s=13.479
+[TRAIN] step=015700 loss=0.145506 l1=0.145039 kld=0.000047 grad_norm=2.436 steps/s=13.481
+[TRAIN] step=015750 loss=0.125854 l1=0.125372 kld=0.000048 grad_norm=2.190 steps/s=13.484
+[TRAIN] step=015800 loss=0.124655 l1=0.124199 kld=0.000046 grad_norm=2.625 steps/s=13.487
+[TRAIN] step=015850 loss=0.128082 l1=0.127529 kld=0.000055 grad_norm=2.684 steps/s=13.490
+[TRAIN] step=015900 loss=0.127549 l1=0.127097 kld=0.000045 grad_norm=2.178 steps/s=13.493
+[TRAIN] step=015950 loss=0.125435 l1=0.125017 kld=0.000042 grad_norm=2.163 steps/s=13.495
+[TRAIN] step=016000 loss=0.145192 l1=0.144712 kld=0.000048 grad_norm=2.728 steps/s=13.496
+[EVAL] step=016000 eval_loss=0.142442 eval_l1=0.142001 eval_kld=0.000044
+[SAVE] best.pt step=16000 best_eval_l1=0.142001
+[TRAIN] step=016050 loss=0.126258 l1=0.125759 kld=0.000050 grad_norm=2.524 steps/s=13.449
+[TRAIN] step=016100 loss=0.151025 l1=0.150285 kld=0.000074 grad_norm=2.186 steps/s=13.451
+[TRAIN] step=016150 loss=0.124015 l1=0.123566 kld=0.000045 grad_norm=2.976 steps/s=13.453
+[TRAIN] step=016200 loss=0.148911 l1=0.148539 kld=0.000037 grad_norm=2.002 steps/s=13.455
+[TRAIN] step=016250 loss=0.112888 l1=0.112499 kld=0.000039 grad_norm=3.290 steps/s=13.457
+[TRAIN] step=016300 loss=0.137091 l1=0.136713 kld=0.000038 grad_norm=2.840 steps/s=13.459
+[TRAIN] step=016350 loss=0.133814 l1=0.133393 kld=0.000042 grad_norm=2.324 steps/s=13.461
+[TRAIN] step=016400 loss=0.128575 l1=0.128205 kld=0.000037 grad_norm=1.857 steps/s=13.467
+[TRAIN] step=016450 loss=0.122826 l1=0.122484 kld=0.000034 grad_norm=1.855 steps/s=13.472
+[TRAIN] step=016500 loss=0.151324 l1=0.150938 kld=0.000039 grad_norm=2.669 steps/s=13.474
+[TRAIN] step=016550 loss=0.129425 l1=0.128964 kld=0.000046 grad_norm=2.021 steps/s=13.477
+[TRAIN] step=016600 loss=0.138154 l1=0.137314 kld=0.000084 grad_norm=2.356 steps/s=13.479
+[TRAIN] step=016650 loss=0.135641 l1=0.135183 kld=0.000046 grad_norm=2.353 steps/s=13.482
+[TRAIN] step=016700 loss=0.119388 l1=0.119059 kld=0.000033 grad_norm=2.324 steps/s=13.484
+[TRAIN] step=016750 loss=0.102603 l1=0.102261 kld=0.000034 grad_norm=2.782 steps/s=13.487
+[TRAIN] step=016800 loss=0.123200 l1=0.122790 kld=0.000041 grad_norm=2.593 steps/s=13.488
+[TRAIN] step=016850 loss=0.139361 l1=0.138971 kld=0.000039 grad_norm=2.328 steps/s=13.489
+[TRAIN] step=016900 loss=0.137368 l1=0.136884 kld=0.000048 grad_norm=2.599 steps/s=13.492
+[TRAIN] step=016950 loss=0.128966 l1=0.128524 kld=0.000044 grad_norm=1.952 steps/s=13.494
+[TRAIN] step=017000 loss=0.123472 l1=0.122911 kld=0.000056 grad_norm=2.131 steps/s=13.497
+[EVAL] step=017000 eval_loss=0.141627 eval_l1=0.141268 eval_kld=0.000036
+[SAVE] best.pt step=17000 best_eval_l1=0.141268
+[TRAIN] step=017050 loss=0.165826 l1=0.165473 kld=0.000035 grad_norm=2.004 steps/s=13.454
+[TRAIN] step=017100 loss=0.114021 l1=0.113693 kld=0.000033 grad_norm=1.849 steps/s=13.456
+[TRAIN] step=017150 loss=0.121091 l1=0.120773 kld=0.000032 grad_norm=1.963 steps/s=13.458
+[TRAIN] step=017200 loss=0.121185 l1=0.120770 kld=0.000041 grad_norm=2.080 steps/s=13.461
+[TRAIN] step=017250 loss=0.142438 l1=0.141843 kld=0.000060 grad_norm=2.311 steps/s=13.462
+[TRAIN] step=017300 loss=0.126140 l1=0.125755 kld=0.000038 grad_norm=2.215 steps/s=13.464
+[TRAIN] step=017350 loss=0.150275 l1=0.149840 kld=0.000043 grad_norm=2.498 steps/s=13.467
+[TRAIN] step=017400 loss=0.139866 l1=0.139400 kld=0.000047 grad_norm=2.331 steps/s=13.476
+[TRAIN] step=017450 loss=0.130101 l1=0.129666 kld=0.000043 grad_norm=2.275 steps/s=13.490
+[TRAIN] step=017500 loss=0.119709 l1=0.119231 kld=0.000048 grad_norm=2.863 steps/s=13.492
+[TRAIN] step=017550 loss=0.118095 l1=0.117394 kld=0.000070 grad_norm=2.044 steps/s=13.495
+[TRAIN] step=017600 loss=0.173816 l1=0.173453 kld=0.000036 grad_norm=1.867 steps/s=13.496
+[TRAIN] step=017650 loss=0.117513 l1=0.117135 kld=0.000038 grad_norm=2.889 steps/s=13.498
+[TRAIN] step=017700 loss=0.134837 l1=0.134468 kld=0.000037 grad_norm=2.689 steps/s=13.501
+[TRAIN] step=017750 loss=0.140928 l1=0.140563 kld=0.000036 grad_norm=2.129 steps/s=13.503
+[TRAIN] step=017800 loss=0.131411 l1=0.131120 kld=0.000029 grad_norm=2.191 steps/s=13.504
+[TRAIN] step=017850 loss=0.147568 l1=0.147235 kld=0.000033 grad_norm=2.413 steps/s=13.506
+[TRAIN] step=017900 loss=0.125285 l1=0.124948 kld=0.000034 grad_norm=2.047 steps/s=13.509
+[TRAIN] step=017950 loss=0.156661 l1=0.156308 kld=0.000035 grad_norm=2.330 steps/s=13.511
+[TRAIN] step=018000 loss=0.117146 l1=0.116829 kld=0.000032 grad_norm=2.614 steps/s=13.514
+[EVAL] step=018000 eval_loss=0.140493 eval_l1=0.140189 eval_kld=0.000030
+[SAVE] best.pt step=18000 best_eval_l1=0.140189
+[TRAIN] step=018050 loss=0.116409 l1=0.116066 kld=0.000034 grad_norm=2.571 steps/s=13.477
+[TRAIN] step=018100 loss=0.103105 l1=0.102716 kld=0.000039 grad_norm=2.683 steps/s=13.478
+[TRAIN] step=018150 loss=0.123759 l1=0.123419 kld=0.000034 grad_norm=3.028 steps/s=13.480
+[TRAIN] step=018200 loss=0.136687 l1=0.136406 kld=0.000028 grad_norm=2.770 steps/s=13.482
+[TRAIN] step=018250 loss=0.138663 l1=0.138369 kld=0.000029 grad_norm=2.237 steps/s=13.483
+[TRAIN] step=018300 loss=0.160453 l1=0.160196 kld=0.000026 grad_norm=1.819 steps/s=13.485
+[TRAIN] step=018350 loss=0.132486 l1=0.132109 kld=0.000038 grad_norm=2.191 steps/s=13.487
+[TRAIN] step=018400 loss=0.130869 l1=0.130613 kld=0.000026 grad_norm=2.726 steps/s=13.493
+[TRAIN] step=018450 loss=0.124296 l1=0.124003 kld=0.000029 grad_norm=1.924 steps/s=13.496
+[TRAIN] step=018500 loss=0.117607 l1=0.117295 kld=0.000031 grad_norm=3.092 steps/s=13.498
+[TRAIN] step=018550 loss=0.129910 l1=0.129575 kld=0.000034 grad_norm=2.298 steps/s=13.501
+[TRAIN] step=018600 loss=0.143896 l1=0.143566 kld=0.000033 grad_norm=2.627 steps/s=13.503
+[TRAIN] step=018650 loss=0.126317 l1=0.126002 kld=0.000032 grad_norm=1.906 steps/s=13.506
+[TRAIN] step=018700 loss=0.141080 l1=0.140751 kld=0.000033 grad_norm=2.024 steps/s=13.507
+[TRAIN] step=018750 loss=0.123216 l1=0.122891 kld=0.000033 grad_norm=1.867 steps/s=13.509
+[TRAIN] step=018800 loss=0.141620 l1=0.141336 kld=0.000028 grad_norm=1.988 steps/s=13.511
+[TRAIN] step=018850 loss=0.120212 l1=0.119835 kld=0.000038 grad_norm=2.900 steps/s=13.512
+[TRAIN] step=018900 loss=0.129652 l1=0.129330 kld=0.000032 grad_norm=2.751 steps/s=13.513
+[TRAIN] step=018950 loss=0.121768 l1=0.121518 kld=0.000025 grad_norm=1.852 steps/s=13.514
+[TRAIN] step=019000 loss=0.143814 l1=0.143510 kld=0.000030 grad_norm=2.397 steps/s=13.515
+[EVAL] step=019000 eval_loss=0.142998 eval_l1=0.142719 eval_kld=0.000028
+[TRAIN] step=019050 loss=0.098609 l1=0.098287 kld=0.000032 grad_norm=2.103 steps/s=13.486
+[TRAIN] step=019100 loss=0.124843 l1=0.124336 kld=0.000051 grad_norm=2.707 steps/s=13.489
+[TRAIN] step=019150 loss=0.130668 l1=0.130365 kld=0.000030 grad_norm=2.126 steps/s=13.491
+[TRAIN] step=019200 loss=0.150209 l1=0.149923 kld=0.000029 grad_norm=1.957 steps/s=13.492
+[TRAIN] step=019250 loss=0.126156 l1=0.125822 kld=0.000033 grad_norm=1.935 steps/s=13.494
+[TRAIN] step=019300 loss=0.083629 l1=0.083323 kld=0.000031 grad_norm=1.820 steps/s=13.496
+[TRAIN] step=019350 loss=0.125343 l1=0.125020 kld=0.000032 grad_norm=2.146 steps/s=13.500
+[TRAIN] step=019400 loss=0.130660 l1=0.130387 kld=0.000027 grad_norm=1.794 steps/s=13.504
+[TRAIN] step=019450 loss=0.123276 l1=0.122988 kld=0.000029 grad_norm=2.237 steps/s=13.505
+[TRAIN] step=019500 loss=0.113127 l1=0.112850 kld=0.000028 grad_norm=2.029 steps/s=13.507
+[TRAIN] step=019550 loss=0.099642 l1=0.099303 kld=0.000034 grad_norm=2.442 steps/s=13.510
+[TRAIN] step=019600 loss=0.095293 l1=0.094955 kld=0.000034 grad_norm=1.981 steps/s=13.512
+[TRAIN] step=019650 loss=0.113688 l1=0.113352 kld=0.000034 grad_norm=1.665 steps/s=13.513
+[TRAIN] step=019700 loss=0.135977 l1=0.135643 kld=0.000033 grad_norm=1.958 steps/s=13.515
+[TRAIN] step=019750 loss=0.121854 l1=0.121593 kld=0.000026 grad_norm=2.775 steps/s=13.517
+[TRAIN] step=019800 loss=0.137117 l1=0.136853 kld=0.000026 grad_norm=2.149 steps/s=13.518
+[TRAIN] step=019850 loss=0.141604 l1=0.141324 kld=0.000028 grad_norm=2.518 steps/s=13.520
+[TRAIN] step=019900 loss=0.104306 l1=0.104066 kld=0.000024 grad_norm=1.900 steps/s=13.522
+[TRAIN] step=019950 loss=0.141464 l1=0.141262 kld=0.000020 grad_norm=2.080 steps/s=13.524
+[TRAIN] step=020000 loss=0.116663 l1=0.116411 kld=0.000025 grad_norm=2.062 steps/s=13.525
+[EVAL] step=020000 eval_loss=0.139082 eval_l1=0.138809 eval_kld=0.000027
+[SAVE] best.pt step=20000 best_eval_l1=0.138809
+[SAVE] latest.pt step=20000
+[TRAIN] step=020050 loss=0.116144 l1=0.115817 kld=0.000033 grad_norm=2.289 steps/s=13.468
+[TRAIN] step=020100 loss=0.140322 l1=0.140063 kld=0.000026 grad_norm=2.269 steps/s=13.470
+[TRAIN] step=020150 loss=0.139692 l1=0.139345 kld=0.000035 grad_norm=2.238 steps/s=13.471
+[TRAIN] step=020200 loss=0.126587 l1=0.126372 kld=0.000022 grad_norm=2.337 steps/s=13.475
+[TRAIN] step=020250 loss=0.133086 l1=0.132874 kld=0.000021 grad_norm=1.914 steps/s=13.479
+[TRAIN] step=020300 loss=0.147160 l1=0.146954 kld=0.000021 grad_norm=1.662 steps/s=13.484
+[TRAIN] step=020350 loss=0.127646 l1=0.127389 kld=0.000026 grad_norm=1.730 steps/s=13.487
+[TRAIN] step=020400 loss=0.109758 l1=0.109541 kld=0.000022 grad_norm=1.954 steps/s=13.489
+[TRAIN] step=020450 loss=0.149200 l1=0.148972 kld=0.000023 grad_norm=2.118 steps/s=13.491
+[TRAIN] step=020500 loss=0.130334 l1=0.130085 kld=0.000025 grad_norm=1.725 steps/s=13.494
+[TRAIN] step=020550 loss=0.138031 l1=0.137736 kld=0.000029 grad_norm=1.979 steps/s=13.496
+[TRAIN] step=020600 loss=0.122549 l1=0.122237 kld=0.000031 grad_norm=1.905 steps/s=13.498
+[TRAIN] step=020650 loss=0.110795 l1=0.110565 kld=0.000023 grad_norm=1.758 steps/s=13.501
+[TRAIN] step=020700 loss=0.142838 l1=0.142633 kld=0.000021 grad_norm=1.808 steps/s=13.503
+[TRAIN] step=020750 loss=0.156303 l1=0.156076 kld=0.000023 grad_norm=2.508 steps/s=13.505
+[TRAIN] step=020800 loss=0.132456 l1=0.132169 kld=0.000029 grad_norm=1.725 steps/s=13.506
+[TRAIN] step=020850 loss=0.138035 l1=0.137823 kld=0.000021 grad_norm=2.160 steps/s=13.508
+[TRAIN] step=020900 loss=0.128971 l1=0.128703 kld=0.000027 grad_norm=1.770 steps/s=13.510
+[TRAIN] step=020950 loss=0.122515 l1=0.122243 kld=0.000027 grad_norm=1.788 steps/s=13.511
+[TRAIN] step=021000 loss=0.122261 l1=0.122009 kld=0.000025 grad_norm=2.115 steps/s=13.513
+[EVAL] step=021000 eval_loss=0.143929 eval_l1=0.143648 eval_kld=0.000028
+[TRAIN] step=021050 loss=0.112279 l1=0.112056 kld=0.000022 grad_norm=2.163 steps/s=13.488
+[TRAIN] step=021100 loss=0.107829 l1=0.107533 kld=0.000030 grad_norm=2.188 steps/s=13.489
+[TRAIN] step=021150 loss=0.109409 l1=0.109176 kld=0.000023 grad_norm=1.971 steps/s=13.490
+[TRAIN] step=021200 loss=0.114458 l1=0.114146 kld=0.000031 grad_norm=1.792 steps/s=13.491
+[TRAIN] step=021250 loss=0.128492 l1=0.128231 kld=0.000026 grad_norm=3.443 steps/s=13.494
+[TRAIN] step=021300 loss=0.118804 l1=0.118568 kld=0.000024 grad_norm=1.502 steps/s=13.499
+[TRAIN] step=021350 loss=0.140586 l1=0.140310 kld=0.000028 grad_norm=1.991 steps/s=13.500
+[TRAIN] step=021400 loss=0.119079 l1=0.118884 kld=0.000019 grad_norm=2.015 steps/s=13.501
+[TRAIN] step=021450 loss=0.155334 l1=0.155075 kld=0.000026 grad_norm=2.502 steps/s=13.503
+[TRAIN] step=021500 loss=0.127839 l1=0.127661 kld=0.000018 grad_norm=1.821 steps/s=13.504
+[TRAIN] step=021550 loss=0.094724 l1=0.094512 kld=0.000021 grad_norm=1.764 steps/s=13.505
+[TRAIN] step=021600 loss=0.140007 l1=0.139764 kld=0.000024 grad_norm=2.387 steps/s=13.506
+[TRAIN] step=021650 loss=0.141277 l1=0.141019 kld=0.000026 grad_norm=1.654 steps/s=13.508
+[TRAIN] step=021700 loss=0.107973 l1=0.107707 kld=0.000027 grad_norm=2.144 steps/s=13.509
+[TRAIN] step=021750 loss=0.090019 l1=0.089740 kld=0.000028 grad_norm=2.334 steps/s=13.511
+[TRAIN] step=021800 loss=0.133165 l1=0.132944 kld=0.000022 grad_norm=2.587 steps/s=13.513
+[TRAIN] step=021850 loss=0.081862 l1=0.081585 kld=0.000028 grad_norm=2.157 steps/s=13.515
+[TRAIN] step=021900 loss=0.115162 l1=0.114934 kld=0.000023 grad_norm=1.930 steps/s=13.516
+[TRAIN] step=021950 loss=0.113652 l1=0.113383 kld=0.000027 grad_norm=2.532 steps/s=13.518
+[TRAIN] step=022000 loss=0.109455 l1=0.109185 kld=0.000027 grad_norm=1.466 steps/s=13.519
+[EVAL] step=022000 eval_loss=0.140606 eval_l1=0.140374 eval_kld=0.000023
+[TRAIN] step=022050 loss=0.127233 l1=0.127016 kld=0.000022 grad_norm=1.795 steps/s=13.497
+[TRAIN] step=022100 loss=0.135512 l1=0.135276 kld=0.000024 grad_norm=2.149 steps/s=13.499
+[TRAIN] step=022150 loss=0.111316 l1=0.111082 kld=0.000023 grad_norm=1.760 steps/s=13.501
+[TRAIN] step=022200 loss=0.118101 l1=0.117911 kld=0.000019 grad_norm=1.656 steps/s=13.503
+[TRAIN] step=022250 loss=0.122382 l1=0.122116 kld=0.000027 grad_norm=2.048 steps/s=13.507
+[TRAIN] step=022300 loss=0.133547 l1=0.133317 kld=0.000023 grad_norm=1.968 steps/s=13.517
+[TRAIN] step=022350 loss=0.099765 l1=0.099565 kld=0.000020 grad_norm=1.579 steps/s=13.524
+[TRAIN] step=022400 loss=0.093564 l1=0.093246 kld=0.000032 grad_norm=1.849 steps/s=13.526
+[TRAIN] step=022450 loss=0.115170 l1=0.114932 kld=0.000024 grad_norm=3.338 steps/s=13.527
+[TRAIN] step=022500 loss=0.114623 l1=0.114409 kld=0.000021 grad_norm=1.749 steps/s=13.528
+[TRAIN] step=022550 loss=0.128406 l1=0.128216 kld=0.000019 grad_norm=1.663 steps/s=13.530
+[TRAIN] step=022600 loss=0.103226 l1=0.103035 kld=0.000019 grad_norm=1.928 steps/s=13.531
+[TRAIN] step=022650 loss=0.152506 l1=0.152271 kld=0.000023 grad_norm=2.352 steps/s=13.532
+[TRAIN] step=022700 loss=0.126079 l1=0.125888 kld=0.000019 grad_norm=2.158 steps/s=13.534
+[TRAIN] step=022750 loss=0.103755 l1=0.103515 kld=0.000024 grad_norm=1.731 steps/s=13.536
+[TRAIN] step=022800 loss=0.146823 l1=0.146588 kld=0.000023 grad_norm=1.964 steps/s=13.538
+[TRAIN] step=022850 loss=0.146310 l1=0.146088 kld=0.000022 grad_norm=1.652 steps/s=13.539
+[TRAIN] step=022900 loss=0.134649 l1=0.134459 kld=0.000019 grad_norm=1.967 steps/s=13.541
+[TRAIN] step=022950 loss=0.129487 l1=0.129278 kld=0.000021 grad_norm=2.059 steps/s=13.542
+[TRAIN] step=023000 loss=0.110253 l1=0.109985 kld=0.000027 grad_norm=2.129 steps/s=13.543
+[EVAL] step=023000 eval_loss=0.141533 eval_l1=0.141348 eval_kld=0.000019
+[TRAIN] step=023050 loss=0.149979 l1=0.149725 kld=0.000025 grad_norm=2.032 steps/s=13.519
+[TRAIN] step=023100 loss=0.106382 l1=0.106190 kld=0.000019 grad_norm=1.782 steps/s=13.521
+[TRAIN] step=023150 loss=0.121460 l1=0.121271 kld=0.000019 grad_norm=1.573 steps/s=13.522
+[TRAIN] step=023200 loss=0.118589 l1=0.118334 kld=0.000026 grad_norm=2.230 steps/s=13.523
+[TRAIN] step=023250 loss=0.116488 l1=0.116288 kld=0.000020 grad_norm=1.989 steps/s=13.525
+[TRAIN] step=023300 loss=0.105963 l1=0.105670 kld=0.000029 grad_norm=1.960 steps/s=13.529
+[TRAIN] step=023350 loss=0.117727 l1=0.117478 kld=0.000025 grad_norm=1.634 steps/s=13.534
+[TRAIN] step=023400 loss=0.121664 l1=0.121499 kld=0.000017 grad_norm=1.754 steps/s=13.536
+[TRAIN] step=023450 loss=0.100265 l1=0.100037 kld=0.000023 grad_norm=1.861 steps/s=13.538
+[TRAIN] step=023500 loss=0.102326 l1=0.102138 kld=0.000019 grad_norm=1.602 steps/s=13.539
+[TRAIN] step=023550 loss=0.144212 l1=0.143997 kld=0.000021 grad_norm=1.643 steps/s=13.541
+[TRAIN] step=023600 loss=0.102749 l1=0.102543 kld=0.000021 grad_norm=2.017 steps/s=13.542
+[TRAIN] step=023650 loss=0.104560 l1=0.104355 kld=0.000021 grad_norm=1.958 steps/s=13.543
+[TRAIN] step=023700 loss=0.107273 l1=0.107103 kld=0.000017 grad_norm=1.735 steps/s=13.545
+[TRAIN] step=023750 loss=0.118555 l1=0.118369 kld=0.000019 grad_norm=1.850 steps/s=13.547
+[TRAIN] step=023800 loss=0.109293 l1=0.109057 kld=0.000024 grad_norm=2.245 steps/s=13.549
+[TRAIN] step=023850 loss=0.128196 l1=0.128022 kld=0.000017 grad_norm=2.857 steps/s=13.551
+[TRAIN] step=023900 loss=0.112251 l1=0.112040 kld=0.000021 grad_norm=1.857 steps/s=13.552
+[TRAIN] step=023950 loss=0.108787 l1=0.108593 kld=0.000019 grad_norm=1.596 steps/s=13.554
+[TRAIN] step=024000 loss=0.146083 l1=0.145882 kld=0.000020 grad_norm=2.040 steps/s=13.556
+[EVAL] step=024000 eval_loss=0.140263 eval_l1=0.140063 eval_kld=0.000020
+[TRAIN] step=024050 loss=0.127111 l1=0.126930 kld=0.000018 grad_norm=2.528 steps/s=13.533
+[TRAIN] step=024100 loss=0.106241 l1=0.106038 kld=0.000020 grad_norm=1.793 steps/s=13.534
+[TRAIN] step=024150 loss=0.120817 l1=0.120616 kld=0.000020 grad_norm=2.230 steps/s=13.536
+[TRAIN] step=024200 loss=0.119670 l1=0.119418 kld=0.000025 grad_norm=1.933 steps/s=13.537
+[TRAIN] step=024250 loss=0.136964 l1=0.136762 kld=0.000020 grad_norm=2.104 steps/s=13.539
+[TRAIN] step=024300 loss=0.090188 l1=0.090002 kld=0.000019 grad_norm=1.610 steps/s=13.543
+[TRAIN] step=024350 loss=0.105207 l1=0.105040 kld=0.000017 grad_norm=1.456 steps/s=13.550
+[TRAIN] step=024400 loss=0.115871 l1=0.115679 kld=0.000019 grad_norm=2.451 steps/s=13.552
+[TRAIN] step=024450 loss=0.155595 l1=0.155411 kld=0.000018 grad_norm=2.253 steps/s=13.554
+[TRAIN] step=024500 loss=0.124203 l1=0.124028 kld=0.000018 grad_norm=2.385 steps/s=13.556
+[TRAIN] step=024550 loss=0.105545 l1=0.105291 kld=0.000025 grad_norm=1.676 steps/s=13.557
+[TRAIN] step=024600 loss=0.112440 l1=0.112210 kld=0.000023 grad_norm=1.652 steps/s=13.559
+[TRAIN] step=024650 loss=0.139173 l1=0.138998 kld=0.000017 grad_norm=1.642 steps/s=13.560
+[TRAIN] step=024700 loss=0.103870 l1=0.103692 kld=0.000018 grad_norm=2.782 steps/s=13.562
+[TRAIN] step=024750 loss=0.127126 l1=0.126930 kld=0.000020 grad_norm=1.799 steps/s=13.563
+[TRAIN] step=024800 loss=0.121180 l1=0.121036 kld=0.000014 grad_norm=1.596 steps/s=13.564
+[TRAIN] step=024850 loss=0.134707 l1=0.134531 kld=0.000018 grad_norm=1.941 steps/s=13.565
+[TRAIN] step=024900 loss=0.134585 l1=0.134427 kld=0.000016 grad_norm=3.191 steps/s=13.566
+[TRAIN] step=024950 loss=0.119991 l1=0.119773 kld=0.000022 grad_norm=2.094 steps/s=13.568
+[TRAIN] step=025000 loss=0.093442 l1=0.093244 kld=0.000020 grad_norm=2.385 steps/s=13.569
+[EVAL] step=025000 eval_loss=0.139301 eval_l1=0.139072 eval_kld=0.000023
+[SAVE] latest.pt step=25000
+[TRAIN] step=025050 loss=0.112491 l1=0.112281 kld=0.000021 grad_norm=1.957 steps/s=13.531
+[TRAIN] step=025100 loss=0.123036 l1=0.122846 kld=0.000019 grad_norm=2.423 steps/s=13.532
+[TRAIN] step=025150 loss=0.146671 l1=0.146462 kld=0.000021 grad_norm=1.636 steps/s=13.534
+[TRAIN] step=025200 loss=0.142181 l1=0.142011 kld=0.000017 grad_norm=1.913 steps/s=13.535
+[TRAIN] step=025250 loss=0.097974 l1=0.097748 kld=0.000023 grad_norm=2.832 steps/s=13.538
+[TRAIN] step=025300 loss=0.135743 l1=0.135576 kld=0.000017 grad_norm=3.454 steps/s=13.541
+[TRAIN] step=025350 loss=0.124718 l1=0.124532 kld=0.000019 grad_norm=1.537 steps/s=13.543
+[TRAIN] step=025400 loss=0.124569 l1=0.124375 kld=0.000019 grad_norm=1.837 steps/s=13.545
+[TRAIN] step=025450 loss=0.121179 l1=0.120989 kld=0.000019 grad_norm=2.128 steps/s=13.546
+[TRAIN] step=025500 loss=0.142869 l1=0.142713 kld=0.000016 grad_norm=2.147 steps/s=13.546
+[TRAIN] step=025550 loss=0.115131 l1=0.114961 kld=0.000017 grad_norm=2.257 steps/s=13.547
+[TRAIN] step=025600 loss=0.122920 l1=0.122745 kld=0.000018 grad_norm=1.660 steps/s=13.548
+[TRAIN] step=025650 loss=0.140177 l1=0.140019 kld=0.000016 grad_norm=1.911 steps/s=13.549
+[TRAIN] step=025700 loss=0.115227 l1=0.115051 kld=0.000018 grad_norm=2.267 steps/s=13.550
+[TRAIN] step=025750 loss=0.126015 l1=0.125842 kld=0.000017 grad_norm=1.481 steps/s=13.552
+[TRAIN] step=025800 loss=0.106307 l1=0.106125 kld=0.000018 grad_norm=2.183 steps/s=13.553
+[TRAIN] step=025850 loss=0.116753 l1=0.116585 kld=0.000017 grad_norm=1.802 steps/s=13.553
+[TRAIN] step=025900 loss=0.146237 l1=0.146062 kld=0.000018 grad_norm=1.592 steps/s=13.555
+[TRAIN] step=025950 loss=0.122956 l1=0.122814 kld=0.000014 grad_norm=1.859 steps/s=13.557
+[TRAIN] step=026000 loss=0.099055 l1=0.098887 kld=0.000017 grad_norm=2.110 steps/s=13.558
+[EVAL] step=026000 eval_loss=0.139277 eval_l1=0.139122 eval_kld=0.000016
+[TRAIN] step=026050 loss=0.142589 l1=0.142406 kld=0.000018 grad_norm=1.934 steps/s=13.537
+[TRAIN] step=026100 loss=0.092667 l1=0.092469 kld=0.000020 grad_norm=1.953 steps/s=13.539
+[TRAIN] step=026150 loss=0.139963 l1=0.139817 kld=0.000015 grad_norm=1.472 steps/s=13.540
+[TRAIN] step=026200 loss=0.136989 l1=0.136835 kld=0.000015 grad_norm=1.567 steps/s=13.542
+[TRAIN] step=026250 loss=0.124850 l1=0.124701 kld=0.000015 grad_norm=1.575 steps/s=13.546
+[TRAIN] step=026300 loss=0.145340 l1=0.145134 kld=0.000021 grad_norm=2.497 steps/s=13.549
+[TRAIN] step=026350 loss=0.111798 l1=0.111576 kld=0.000022 grad_norm=1.990 steps/s=13.551
+[TRAIN] step=026400 loss=0.117092 l1=0.116894 kld=0.000020 grad_norm=1.778 steps/s=13.552
+[TRAIN] step=026450 loss=0.123095 l1=0.122911 kld=0.000018 grad_norm=1.786 steps/s=13.553
+[TRAIN] step=026500 loss=0.139081 l1=0.138931 kld=0.000015 grad_norm=1.681 steps/s=13.554
+[TRAIN] step=026550 loss=0.134615 l1=0.134407 kld=0.000021 grad_norm=1.874 steps/s=13.556
+[TRAIN] step=026600 loss=0.113841 l1=0.113661 kld=0.000018 grad_norm=1.624 steps/s=13.558
+[TRAIN] step=026650 loss=0.150183 l1=0.150006 kld=0.000018 grad_norm=1.606 steps/s=13.559
+[TRAIN] step=026700 loss=0.117481 l1=0.117283 kld=0.000020 grad_norm=1.917 steps/s=13.561
+[TRAIN] step=026750 loss=0.123534 l1=0.123376 kld=0.000016 grad_norm=1.724 steps/s=13.563
+[TRAIN] step=026800 loss=0.099402 l1=0.099283 kld=0.000012 grad_norm=2.161 steps/s=13.564
+[TRAIN] step=026850 loss=0.089062 l1=0.088898 kld=0.000016 grad_norm=2.024 steps/s=13.566
+[TRAIN] step=026900 loss=0.115514 l1=0.115390 kld=0.000012 grad_norm=2.111 steps/s=13.567
+[TRAIN] step=026950 loss=0.127240 l1=0.127037 kld=0.000020 grad_norm=2.083 steps/s=13.568
+[TRAIN] step=027000 loss=0.101039 l1=0.100882 kld=0.000016 grad_norm=1.870 steps/s=13.569
+[EVAL] step=027000 eval_loss=0.138288 eval_l1=0.138140 eval_kld=0.000015
+[SAVE] best.pt step=27000 best_eval_l1=0.138140
+[TRAIN] step=027050 loss=0.106474 l1=0.106321 kld=0.000015 grad_norm=2.112 steps/s=13.541
+[TRAIN] step=027100 loss=0.097190 l1=0.097010 kld=0.000018 grad_norm=2.050 steps/s=13.543
+[TRAIN] step=027150 loss=0.119990 l1=0.119772 kld=0.000022 grad_norm=2.169 steps/s=13.545
+[TRAIN] step=027200 loss=0.104507 l1=0.104358 kld=0.000015 grad_norm=1.434 steps/s=13.548
+[TRAIN] step=027250 loss=0.110014 l1=0.109866 kld=0.000015 grad_norm=2.087 steps/s=13.554
+[TRAIN] step=027300 loss=0.129058 l1=0.128910 kld=0.000015 grad_norm=2.138 steps/s=13.561
+[TRAIN] step=027350 loss=0.093942 l1=0.093770 kld=0.000017 grad_norm=1.874 steps/s=13.569
+[TRAIN] step=027400 loss=0.108996 l1=0.108831 kld=0.000017 grad_norm=2.507 steps/s=13.577
+[TRAIN] step=027450 loss=0.102372 l1=0.102216 kld=0.000016 grad_norm=1.826 steps/s=13.585
+[TRAIN] step=027500 loss=0.112529 l1=0.112404 kld=0.000013 grad_norm=1.951 steps/s=13.594
+[TRAIN] step=027550 loss=0.110613 l1=0.110451 kld=0.000016 grad_norm=1.864 steps/s=13.602
+[TRAIN] step=027600 loss=0.139272 l1=0.139082 kld=0.000019 grad_norm=3.616 steps/s=13.611
+[TRAIN] step=027650 loss=0.091950 l1=0.091828 kld=0.000012 grad_norm=2.094 steps/s=13.621
+[TRAIN] step=027700 loss=0.109357 l1=0.109192 kld=0.000016 grad_norm=1.708 steps/s=13.630
+[TRAIN] step=027750 loss=0.130624 l1=0.130455 kld=0.000017 grad_norm=1.729 steps/s=13.638
+[TRAIN] step=027800 loss=0.122398 l1=0.122289 kld=0.000011 grad_norm=2.062 steps/s=13.646
+[TRAIN] step=027850 loss=0.130414 l1=0.130277 kld=0.000014 grad_norm=1.653 steps/s=13.655
+[TRAIN] step=027900 loss=0.143526 l1=0.143360 kld=0.000017 grad_norm=2.362 steps/s=13.663
+[TRAIN] step=027950 loss=0.133283 l1=0.133124 kld=0.000016 grad_norm=2.473 steps/s=13.672
+[TRAIN] step=028000 loss=0.110894 l1=0.110730 kld=0.000016 grad_norm=2.101 steps/s=13.680
+[EVAL] step=028000 eval_loss=0.136890 eval_l1=0.136731 eval_kld=0.000016
+[SAVE] best.pt step=28000 best_eval_l1=0.136731
+[TRAIN] step=028050 loss=0.121374 l1=0.121247 kld=0.000013 grad_norm=2.210 steps/s=13.657
+[TRAIN] step=028100 loss=0.105665 l1=0.105517 kld=0.000015 grad_norm=1.749 steps/s=13.664
+[TRAIN] step=028150 loss=0.157892 l1=0.157744 kld=0.000015 grad_norm=2.257 steps/s=13.672
+[TRAIN] step=028200 loss=0.124831 l1=0.124676 kld=0.000015 grad_norm=1.742 steps/s=13.679
+[TRAIN] step=028250 loss=0.115837 l1=0.115676 kld=0.000016 grad_norm=1.814 steps/s=13.687
+[TRAIN] step=028300 loss=0.099903 l1=0.099726 kld=0.000018 grad_norm=2.274 steps/s=13.695
+[TRAIN] step=028350 loss=0.106016 l1=0.105855 kld=0.000016 grad_norm=2.214 steps/s=13.703
+[TRAIN] step=028400 loss=0.118592 l1=0.118415 kld=0.000018 grad_norm=2.049 steps/s=13.711
+[TRAIN] step=028450 loss=0.114225 l1=0.114058 kld=0.000017 grad_norm=2.113 steps/s=13.718
+[TRAIN] step=028500 loss=0.121336 l1=0.121204 kld=0.000013 grad_norm=1.421 steps/s=13.726
+[TRAIN] step=028550 loss=0.109478 l1=0.109282 kld=0.000020 grad_norm=2.497 steps/s=13.733
+[TRAIN] step=028600 loss=0.109257 l1=0.109085 kld=0.000017 grad_norm=1.533 steps/s=13.740
+[TRAIN] step=028650 loss=0.127402 l1=0.127254 kld=0.000015 grad_norm=1.574 steps/s=13.748
+[TRAIN] step=028700 loss=0.136562 l1=0.136388 kld=0.000017 grad_norm=1.955 steps/s=13.756
+[TRAIN] step=028750 loss=0.125293 l1=0.125156 kld=0.000014 grad_norm=1.958 steps/s=13.764
+[TRAIN] step=028800 loss=0.117513 l1=0.117361 kld=0.000015 grad_norm=1.665 steps/s=13.771
+[TRAIN] step=028850 loss=0.122600 l1=0.122446 kld=0.000015 grad_norm=1.892 steps/s=13.779
+[TRAIN] step=028900 loss=0.103934 l1=0.103773 kld=0.000016 grad_norm=3.821 steps/s=13.788
+[TRAIN] step=028950 loss=0.108470 l1=0.108277 kld=0.000019 grad_norm=1.961 steps/s=13.797
+[TRAIN] step=029000 loss=0.134555 l1=0.134419 kld=0.000014 grad_norm=1.765 steps/s=13.806
+[EVAL] step=029000 eval_loss=0.140967 eval_l1=0.140830 eval_kld=0.000014
+[TRAIN] step=029050 loss=0.121286 l1=0.121123 kld=0.000016 grad_norm=1.998 steps/s=13.794
+[TRAIN] step=029100 loss=0.106174 l1=0.106035 kld=0.000014 grad_norm=1.635 steps/s=13.803
+[TRAIN] step=029150 loss=0.110410 l1=0.110281 kld=0.000013 grad_norm=1.597 steps/s=13.811
+[TRAIN] step=029200 loss=0.108089 l1=0.107940 kld=0.000015 grad_norm=3.014 steps/s=13.818
+[TRAIN] step=029250 loss=0.117136 l1=0.117023 kld=0.000011 grad_norm=2.037 steps/s=13.826
+[TRAIN] step=029300 loss=0.146788 l1=0.146571 kld=0.000022 grad_norm=1.735 steps/s=13.834
+[TRAIN] step=029350 loss=0.100264 l1=0.100115 kld=0.000015 grad_norm=1.706 steps/s=13.843
+[TRAIN] step=029400 loss=0.110876 l1=0.110740 kld=0.000014 grad_norm=3.135 steps/s=13.851
+[TRAIN] step=029450 loss=0.090669 l1=0.090534 kld=0.000014 grad_norm=1.670 steps/s=13.859
+[TRAIN] step=029500 loss=0.105473 l1=0.105349 kld=0.000012 grad_norm=1.541 steps/s=13.867
+[TRAIN] step=029550 loss=0.117629 l1=0.117505 kld=0.000012 grad_norm=3.100 steps/s=13.876
+[TRAIN] step=029600 loss=0.117188 l1=0.117049 kld=0.000014 grad_norm=2.034 steps/s=13.884
+[TRAIN] step=029650 loss=0.122857 l1=0.122709 kld=0.000015 grad_norm=2.197 steps/s=13.892
+[TRAIN] step=029700 loss=0.120082 l1=0.119932 kld=0.000015 grad_norm=1.969 steps/s=13.901
+[TRAIN] step=029750 loss=0.119889 l1=0.119706 kld=0.000018 grad_norm=2.112 steps/s=13.909
+[TRAIN] step=029800 loss=0.123182 l1=0.123031 kld=0.000015 grad_norm=1.497 steps/s=13.918
+[TRAIN] step=029850 loss=0.109868 l1=0.109679 kld=0.000019 grad_norm=1.952 steps/s=13.926
+[TRAIN] step=029900 loss=0.096702 l1=0.096560 kld=0.000014 grad_norm=1.781 steps/s=13.935
+[TRAIN] step=029950 loss=0.110252 l1=0.110066 kld=0.000019 grad_norm=1.667 steps/s=13.943
+[TRAIN] step=030000 loss=0.089128 l1=0.089021 kld=0.000011 grad_norm=1.720 steps/s=13.952
+[EVAL] step=030000 eval_loss=0.140409 eval_l1=0.140266 eval_kld=0.000014
+[SAVE] latest.pt step=30000
+[DONE]
+run_dir: /root/autodl-tmp/cv_final_task2/runs_act/act_ABC_trainABC_evalD_v1

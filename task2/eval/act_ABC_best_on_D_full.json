@@ -1,0 +1,14 @@
+{
+  "ckpt": "/root/autodl-tmp/cv_final_task2/runs_act/act_ABC_trainABC_evalD_v1/best.pt",
+  "step": 28000,
+  "best_metric_in_ckpt": 0.1367309160158038,
+  "train_splits": "splitA,splitB,splitC",
+  "eval_splits": "splitD",
+  "chunk_size": 16,
+  "batch_size": 32,
+  "max_batches": -1,
+  "num_batches": 9654,
+  "loss": 0.12831738638232984,
+  "l1_loss": 0.12815587060274805,
+  "kld_loss": 1.6151580794401635e-05
+}

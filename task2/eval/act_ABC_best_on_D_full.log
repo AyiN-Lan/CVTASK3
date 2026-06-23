@@ -1,0 +1,28 @@
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+[CKPT] /root/autodl-tmp/cv_final_task2/runs_act/act_ABC_trainABC_evalD_v1/best.pt
+[STEP] 28000
+[BEST_METRIC_IN_CKPT] 0.1367309160158038
+[TRAIN_SPLITS] splitA,splitB,splitC
+[EVAL_SPLITS] splitD
+[CHUNK_SIZE] 16
+[LOAD ACTION META] /root/autodl-tmp/cv_final_task2/data/calvin-lerobot/splitD
+[DATASET READY] frames=308918 chunk_size=16
+[SPLIT] splitD: frames=308918
+[LOAD] missing: []
+[LOAD] unexpected: []
+
+[RESULT]
+{
+  "ckpt": "/root/autodl-tmp/cv_final_task2/runs_act/act_ABC_trainABC_evalD_v1/best.pt",
+  "step": 28000,
+  "best_metric_in_ckpt": 0.1367309160158038,
+  "train_splits": "splitA,splitB,splitC",
+  "eval_splits": "splitD",
+  "chunk_size": 16,
+  "batch_size": 32,
+  "max_batches": -1,
+  "num_batches": 9654,
+  "loss": 0.12831738638232984,
+  "l1_loss": 0.12815587060274805,
+  "kld_loss": 1.6151580794401635e-05
+}
